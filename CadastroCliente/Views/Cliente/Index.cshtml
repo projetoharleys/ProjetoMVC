@@ -1,10 +1,12 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Lista de Clientes";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Lista de Clientes</h1>
-
+    <h1>Lista de Clientes</h1>
+    <div>
+        <a asp-controller="Cliente" asp-action="Criar" role="button" class="btn btn-primary">Inserir Cliente</a>
+    </div>
     <table class="table">
         <thead>
             <tr>
@@ -12,61 +14,46 @@
                 <th scope="col">Nome</th>
                 <th scope="col">Email</th>
                 <th scope="col">Telefone</th>
-                <th scope="col">Opções</th>
+                <th scope="col"></th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <th scope="row">1</th>
-                <td>Nenel</td>
-                <td>mdsadv70@gmail.com</td>
-                <td>(11) 999052712</td>
+                <td>Mark</td>
+                <td>mark@email.com</td>
+                <td>(11)9876-1234</td>
                 <td>
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <a role="button" class="btn btn-primary">Atualizar</a>
-                        <a role="button" class="btn btn-danger">Apagar</a>
+                    <div class="btn-group" role="group">
+                        <a asp-controller="Cliente" asp-action="Atualizar" role="button" class="btn btn-primary">Atualizar</a>
+                        <a asp-controller="Cliente" asp-action="Apagar" role="button" class="btn btn-danger">Apagar</a>
                     </div>
                 </td>
             </tr>
             <tr>
                 <th scope="row">2</th>
-                <td>harley</td>
-                <td>harleysantos2006@gmail.com</td>
-                <td>11 971676701</td>
+                <td>Mark</td>
+                <td>mark@email.com</td>
+                <td>(11)9876-1234</td>
                 <td>
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <a role="button" class="btn btn-primary">Atualizar</a>
-                        <a role="button" class="btn btn-danger">Apagar</a>
+                    <div class="btn-group" role="group">
+                        <a asp-controller="Cliente" asp-action="Atualizar" role="button" class="btn btn-primary">Atualizar</a>
+                        <a asp-controller="Cliente" asp-action="Apagar" role="button" class="btn btn-danger">Apagar</a>
                     </div>
                 </td>
             </tr>
             <tr>
                 <th scope="row">3</th>
-                <td>Vanzinha</td>
-                <td>vansantos2006@gmail</td>
-                <td>11 999052712</td>
+                <td>Mark</td>
+                <td>mark@email.com</td>
+                <td>(11)9876-1234</td>
                 <td>
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <a role="button" class="btn btn-primary">Atualizar</a>
-                        <a role="button" class="btn btn-danger">Apagar</a>
+                    <div class="btn-group" role="group">
+                        <a asp-controller="Cliente" asp-action="Atualizar" role="button" class="btn btn-primary">Atualizar</a>
+                        <a asp-controller="Cliente" asp-action="Apagar" role="button" class="btn btn-danger">Apagar</a>
                     </div>
                 </td>
             </tr>
-            <tr>
-                <th scope="row">4</th>
-                <td>Ricardo</td>
-                <td>ricardao121@gmail.com</td>
-                <td>11 999052712</td>
-                <td>
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <a role="button" class="btn btn-primary">Atualizar</a>
-                        <a role="button" class="btn btn-danger">Apagar</a>
-                    </div>
-                </td>
-            </tr>
-            
         </tbody>
     </table>
-
 </div>
-
